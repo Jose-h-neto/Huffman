@@ -1,0 +1,204 @@
+/*
+========================================
+RESET
+========================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+========================================
+GLOBAL
+========================================
+*/
+
+body {
+  font-family: "Archivo", sans-serif;
+  background: linear-gradient(135deg, #0f1c2e, #1e3a5f);
+  color: #ffffff;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 80px 20px 40px;
+}
+
+/*
+========================================
+HEADER
+========================================
+*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 6px 0;
+
+  background: rgba(15, 28, 46, 0.55);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  z-index: 1000;
+}
+
+/*
+========================================
+TÍTULOS
+========================================
+*/
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/*
+========================================
+PARÁGRAFOS
+========================================
+*/
+
+p {
+  margin-bottom: 10px;
+}
+
+/*
+========================================
+TEXTAREA
+========================================
+*/
+
+textarea {
+  width: 600px;
+  max-width: 90vw;
+
+  height: 150px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+
+  resize: vertical;
+  outline: none;
+}
+
+/*
+========================================
+BOTÕES
+========================================
+*/
+
+button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 9999px;
+
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/*
+========================================
+CONTAINER BOTÕES
+========================================
+*/
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/*
+========================================
+BOTÕES ESPECÍFICOS
+========================================
+*/
+
+.btn-comprimir {
+  background: #3aa0ff;
+}
+
+.btn-comprimir:hover {
+  background: #5ab1ff;
+}
+
+.btn-descomprimir {
+  background: #7a5cff;
+}
+
+.btn-descomprimir:hover {
+  background: #9278ff;
+}
+
+.btn-explicacao {
+  background: hsl(133, 67%, 44%);
+}
+
+.btn-explicacao:hover {
+  background: hsl(133, 67%, 34%);
+}
+
+/*
+========================================
+RESULTADO
+========================================
+*/
+
+pre {
+  width: 600px;
+  max-width: 90vw;
+
+  padding: 15px;
+
+  background: #0b1626;
+
+  border-radius: 12px;
+
+  margin-top: 10px;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}

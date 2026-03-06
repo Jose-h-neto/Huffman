@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Compressão Naive</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="botoes">
+        <a href="naive.html">
+          <button class="btn-comprimir">Naive</button>
+        </a>
+
+        <a href="huffman.html">
+          <button class="btn-descomprimir">Huffman</button>
+        </a>
+
+        <a href="explicacao.html">
+          <button class="btn-explicacao">Explicação</button>
+        </a>
+      </div>
+    </header>
+
+    <h1>Algoritmo de Compressão "Ingênuo"</h1>
+
+    <p>Digite um texto:</p>
+
+    <textarea id="inputText"></textarea>
+    <br />
+
+    <div class="botoes">
+      <button class="btn-comprimir" onclick="executarCompressao()">
+        Comprimir
+      </button>
+
+      <button class="btn-descomprimir" onclick="executarDescompressao()">
+        Descomprimir
+      </button>
+    </div>
+
+    <h2>Resultado</h2>
+    <pre id="output"></pre>
+
+    <h2>Estatísticas</h2>
+    <pre id="stats"></pre>
+
+    <script src="naive.js"></script>
+  </body>
+</html>

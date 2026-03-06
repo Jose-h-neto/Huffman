@@ -1,0 +1,45 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+/* título */
+header {
+  padding: 20px;
+}
+
+/* container do carrossel */
+.carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* imagens */
+.carrossel img {
+  height: 500px; /* altura fixa */
+  width: auto; /* largura ajusta automaticamente */
+  display: none; /* JS controla qual aparece */
+}
+
+/* botões */
+.controles {
+  margin-top: 20px;
+}
+
+.controles button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
